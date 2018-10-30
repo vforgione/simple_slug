@@ -12,6 +12,7 @@ defmodule SimpleSlug.MixProject do
 
       # docs
       name: "SimpleSlug",
+      description: "A passive slugging module -- simple, transliteration-free slugs.",
       source_url: "https://github.com/vforgione/simple_slug",
       docs: [
         main: "SimpleSlug"
