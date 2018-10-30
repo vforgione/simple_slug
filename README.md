@@ -4,7 +4,7 @@
 
 A passive slugging module -- simple, transliteration-free slugs.
 
-Given Elixir handles UTF-8 without issue, and browsers handle UtF-8
+Given Elixir handles UTF-8 without issue, and browsers handle UTF-8
 without issue both in content and in URIs, why should you fight your
 users' preferred input?
 
