@@ -1,5 +1,7 @@
 # SimpleSlug
 
+[![Build Status](https://travis-ci.com/vforgione/simple_slug.svg?branch=master)](https://travis-ci.com/vforgione/simple_slug)
+
 A passive slugging module -- simple, transliteration-free slugs.
 
 Given Elixir handles UTF-8 without issue, and browsers handle UtF-8
@@ -9,8 +11,8 @@ users' preferred input?
 Transliteration is ridiculously difficult and expensive. The best
 we have are brute force libraries:
 
-- http://cldr.unicode.org/index/cldr-spec/transliteration-guidelines
-- http://userguide.icu-project.org/transforms/general
+- [http://cldr.unicode.org/index/cldr-spec/transliteration-guidelines](http://cldr.unicode.org/index/cldr-spec/transliteration-guidelines)
+- [http://userguide.icu-project.org/transforms/general](http://userguide.icu-project.org/transforms/general)
 
 Here's an example: what would a typical transliteration of _消防署_
 be? Chances are it would be transformed to _xiāofángshǔ_. That's fine if
