@@ -53,26 +53,26 @@ defmodule SimpleSlug do
 
   ## Examples
 
-    iex> SimpleSlug.slugify("Hello World")
-    "hello-world"
+      iex> SimpleSlug.slugify("Hello World")
+      "hello-world"
 
-    iex> SimpleSlug.slugify("Hello World", joiner: "_")
-    "hello_world"
+      iex> SimpleSlug.slugify("Hello World", joiner: "_")
+      "hello_world"
 
-    iex> SimpleSlug.slugify("Hello World", lowercase?: false)
-    "Hello-World"
+      iex> SimpleSlug.slugify("Hello World", lowercase?: false)
+      "Hello-World"
 
-    iex> SimpleSlug.slugify("Hello World", truncate: 5)
-    "hello"
+      iex> SimpleSlug.slugify("Hello World", truncate: 5)
+      "hello"
 
-    iex> SimpleSlug.slugify("Hello World", truncate: 6)
-    "hello"
+      iex> SimpleSlug.slugify("Hello World", truncate: 6)
+      "hello"
 
-    iex> SimpleSlug.slugify("Straßen von Berlin")
-    "straßen-von-berlin"
+      iex> SimpleSlug.slugify("Straßen von Berlin")
+      "straßen-von-berlin"
 
-    iex> SimpleSlug.slugify("東京キャブ乗り場2018年1月")
-    "東京キャブ乗り場2018年1月"
+      iex> SimpleSlug.slugify("東京キャブ乗り場2018年1月")
+      "東京キャブ乗り場2018年1月"
   """
   @spec slugify(binary(), keyword()) :: binary()
   def slugify(value, opts \\ []) do
